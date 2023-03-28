@@ -1,8 +1,12 @@
 try {
-	var width = screen.availWidth;
-	var height = screen.availHeight;
+	const width = Math.round(screen.width * .99);
+	const height = Math.round(screen.height * .99);
 	var aspectRatio = width / height;
 	var siteVariant = 0;	//0=portrait, 1=landscape, 2=square
+	const navbar = document.getElementById("navbar");
+	const main = document.getElementById("main");
+	navbar.style.width = 0.09 * width + "px"
+	// alert(main.offsetWidth);
 	// alert ("width=" + width + "  height=" + height);
 	if (aspectRatio > 0.75 && aspectRatio < 1.3)
 		siteVariant = 2;
@@ -12,13 +16,13 @@ try {
 		siteVariant = 0;
 	switch (siteVariant) {
 		case 0:
-			document.getElementById ("video-bg").src = "src/vid2.mp4";
+	
 			break;
 		case 1:
-			document.getElementById ("video-bg").src = "src/vid1.mp4";
+	
 			break;
 		case 2:
-			document.getElementById ("video-bg").src = "src/vid1.mp4";
+	
 			break;
 	}
 	// alert("Screen Resolution: " + window.screen.availWidth + " x " + window.screen.availHeight)
