@@ -3,9 +3,10 @@ try {
 	const height = Math.round(screen.height * .99);
 	var aspectRatio = width / height;
 	var siteVariant = 0;	//0=portrait, 1=landscape, 2=square
-	const navbar = document.getElementById("navbar");
-	const main = document.getElementById("main");
-	navbar.style.width = 0.09 * width + "px"
+	// const navbar = document.getElementById("navbar");
+	// const main = document.getElementById("main");
+	// navbar.style.width = 0.09 * width + "px"
+	// main.style.width = 0.91 * width + "px"
 	// alert(main.offsetWidth);
 	// alert ("width=" + width + "  height=" + height);
 	if (aspectRatio > 0.75 && aspectRatio < 1.3)

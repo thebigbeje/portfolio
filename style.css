@@ -14,18 +14,18 @@
 }
 
 ::-webkit-scrollbar {
-  display: none;
+
+  /*  display: none;*/
   width: 8px;
   height: 8px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #0D0D0D;
+  background: #1D1D1D;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #F2F2F2;
-  border-radius: 4px;
+  background: #424242;/*  border-radius: 4px;*/
 }
 
 ::-webkit-scrollbar-thumb:active {
@@ -78,18 +78,24 @@ section.container {
   height: auto;
   background-color: #f2f2f2;/*  background-color: transparent;*/
   flex-direction: row;
+  justify-content: flex-end;
 }
 
 section.navbar {
-
-  /*  height: 90vh;*/
+  position: fixed;
+  left: 20px;
+  top: 0;
   width: calc(9vw * .99);
   background-color: #181818;
   flex-direction: column;
   justify-content: space-between;
+  z-index: 4;
 }
 
 section.main {
+  height: auto;/*  width: 100%;*/
+  width: calc(calc(calc(91vw * .99) + calc(100vw * .01)) - 8px);
+  flex-direction: column;
   background-color: #1D1D1D;
 }
 
@@ -100,31 +106,35 @@ div.logo {
 
 div.nav-buttons {
   width: 100%;
+  background-color: pink;
   flex-direction: column;
-  padding-top: 3rem;
+/*  padding-top: 3rem;*/
 }
 
 div.nav-logos {
   margin-bottom: 22vh;
 }
 
+div.main {
+  width: 30vw;
+}
+
 img.logo {
   height: 100%;
   filter: drop-shadow(0 0 20px rgba(242, 242, 242, .3));  /*  filter: drop-shadow(0 0 40px rgba(13, 13, 13, .6));*/
-  z-index: 5e;
+  z-index: 5;
 }
 
 img.icon {
   height: 2vh;
   margin: calc(.18vh + .18vw);
-  padding: calc(.18vh + .18vw);
-  filter: drop-shadow(0 0 5px rgba(222, 222, 222, .4));
+  padding: calc(.18vh + .18vw);/*  filter: drop-shadow(0 0 5px rgba(222, 222, 222, .4));*/
   transition-timing-function: ease;
   transition-duration: .2s;
 }
 
 img.icon:hover {
-  filter: drop-shadow(0 0 15px rgba(222, 222, 222, .4));
+  filter: drop-shadow(0 0 10px rgba(239, 239, 239, .4));
   transition-timing-function: ease;
   transition-duration: .2s;
 }
@@ -132,8 +142,9 @@ img.icon:hover {
 a.button-enabled,
 a.button-disabled {
   width: 100%;
-  font-family: TT-Interphases-Pro-Light;
-  font-size: 1.1rem;
+  background-color: #1A4CFF64;
+  font-family: TT-Interphases-Pro-Light;/*  font-size: 1.1rem;*/
+  font-size: .6rem;
   padding: .9rem;/*  color: #FFFFFF;*/
   border-bottom: 1px solid #282828;
   text-align: center;
@@ -143,7 +154,8 @@ a.button-disabled {
 
 a.button-disabled:hover,
 a.button-enabled {
-/*  color: #08FDD8;*/
+
+  /*  color: #08FDD8;*/
   color: #FFFFFF;
   text-shadow: 0 0 20px rgba(239, 239, 239, .6);
   transition-duration: 0.2s;
