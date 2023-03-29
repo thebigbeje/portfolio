@@ -83,7 +83,7 @@ section.container {
 
 section.navbar {
   position: fixed;
-  left: 20px;
+  left: 0px;
   top: 0;
   width: calc(9vw * .99);
   background-color: #181818;
@@ -93,7 +93,12 @@ section.navbar {
 }
 
 section.main {
-  height: auto;/*  width: 100%;*/
+  position: absolute;
+  height: auto;
+  top: 0;
+  right: 0;
+
+/*    width: 100%;*/
   width: calc(calc(calc(91vw * .99) + calc(100vw * .01)) - 8px);
   flex-direction: column;
   background-color: #1D1D1D;
@@ -106,9 +111,8 @@ div.logo {
 
 div.nav-buttons {
   width: 100%;
-  background-color: pink;
   flex-direction: column;
-/*  padding-top: 3rem;*/
+  padding-top: 3rem;
 }
 
 div.nav-logos {
@@ -142,10 +146,10 @@ img.icon:hover {
 a.button-enabled,
 a.button-disabled {
   width: 100%;
-  background-color: #1A4CFF64;
-  font-family: TT-Interphases-Pro-Light;/*  font-size: 1.1rem;*/
-  font-size: .6rem;
-  padding: .9rem;/*  color: #FFFFFF;*/
+  font-family: TT-Interphases-Pro-Light;
+  font-size: 1.1rem;
+  padding: .9rem 0;
+/*  color: #FFFFFF;*/
   border-bottom: 1px solid #282828;
   text-align: center;
   color: #909096;
