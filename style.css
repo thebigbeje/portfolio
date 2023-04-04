@@ -1,14 +1,4 @@
 @font-face {
-  font-family: TT-Fellows-Bold;
-  src: url("src/fonts/TT Fellows Bold.ttf");
-}
-
-@font-face {
-  font-family: DIN-1451;
-  src: url("src/fonts/DIN 1451 Engschrift.ttf");
-}
-
-@font-face {
   font-family: TT-Interphases-Pro-Light;
   src: url("src/fonts/TT Interphases Pro Light.ttf");
 }
@@ -25,6 +15,10 @@
 
 ::-webkit-scrollbar {
   display: none;
+}
+
+html {
+  overflowx: auto;
 }
 
 html,
@@ -111,7 +105,7 @@ section.section-2 {
 
 div.logo {
   height: 6rem;
-  margin-top: 2rem;
+  margin-top: 6rem;
 }
 
 div.nav-buttons {
@@ -131,8 +125,8 @@ div.main {
 div.big-title {
   flex-direction: column;
   align-items: flex-start;
-  margin-top: 10%;
-  margin-left: 5%;
+  margin-top: 15%;
+  margin-left: 10%;
 }
 
 div.section-2 {
@@ -169,14 +163,14 @@ p.big-title {
   margin: 0;
 }
 
-p.sub-title1 {
+p.header1 {
   font-family: TT-Interphases-Pro-Medium;
   font-size: 4rem;
   margin: 1rem 0;
   color: #00EDED;
 }
 
-p.sub-title2 {
+p.header2 {
   font-family: TT-Interphases-Pro-Light;
   font-size: 2rem;
   margin: 1.5rem 0;
@@ -194,7 +188,7 @@ a.button-rect {
   font-family: TT-Interphases-Pro-Light;
   font-size: 1.2rem;
   margin-top: 2%;
-  margin-left: 5%;
+  margin-left: 10%;
   padding: .6em 2.4em;
   border: #00EDED 1.5px solid;
   color: #00EDED;
@@ -207,22 +201,18 @@ a.button-rect:hover {
   transition-duration: 0.2s;
 }
 
-a.button-enabled,
-a.button-disabled {
+a.nav-button {
   width: 100%;
   font-family: TT-Interphases-Pro-Light;
   font-size: 1.1rem;
-  padding: .9rem 0;/*  color: #FFFFFF;*/
+  padding: .9rem 0;
   color: #909096;
   border-bottom: 1px solid #282828;
   text-align: center;
   transition-duration: 0.2s;
 }
 
-a.button-disabled:hover,
-a.button-enabled {
-
-  /*  color: #08FDD8;*/
+a.nav-button:hover {
   color: #FFFFFF;
   text-shadow: 0 0 20px rgba(239, 239, 239, .6);
   transition-duration: 0.2s;
