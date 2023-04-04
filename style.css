@@ -143,8 +143,8 @@ div.section-2 {
 }
 
 img.logo {
-  width: 100%;
-  filter: drop-shadow(0 0 20px rgba(242, 242, 242, .3));  /*  filter: drop-shadow(0 0 40px rgba(13, 13, 13, .6));*/
+  width: 80%;
+  filter: drop-shadow(0 0 5px rgba(242, 242, 242, .3));  /*  filter: drop-shadow(0 0 40px rgba(13, 13, 13, .6));*/
   z-index: 5;
 }
 
